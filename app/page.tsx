@@ -1,12 +1,12 @@
-import Image from "next/image"
-import { Inter } from "@next/font/google"
-import styles from "./page.module.css"
-import Header from "../components/Header"
+import Image from 'next/image'
+import { Inter } from '@next/font/google'
+import styles from './page.module.css'
+import Header from '../components/Header'
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ['latin'] })
 
 const getData = async () => {
-  const data = await fetch("https://reddit.com/.json")
+  const data = await fetch('https://reddit.com/.json')
   return data.json()
 }
 
@@ -30,7 +30,7 @@ export default async function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
+            By{' '}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
