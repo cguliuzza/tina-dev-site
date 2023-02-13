@@ -1,14 +1,17 @@
-// const getData = async () => {
-//   const post = await getDataFromCMS(slug)
-//   return post
-// }
+const delay = (time) =>
+  new Promise((resolve) => {
+    setTimeout(() => resolve(1), time)
+  })
 
-// export default async function BlogPost({ params }) {
+const getData = async (slug) => {
+  const post = await delay(5000)
+  return { slug }
+}
 
-export default function BlogPost({ params }) {
+export default async function BlogPost({ params }) {
   console.log(params)
   const { slug } = params
-  //   const post = await getData(slug)
+  const post = await getData(slug)
 
-  return <div>Blog Slug: {slug}</div>
+  return <div>{post.slug}</div>
 }
