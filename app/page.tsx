@@ -16,6 +16,9 @@ export default async function Home() {
   // wait to render until data is fetched
   const data = await getData()
   const post = data.data.children[0].data.title
+  throw new Error(
+    'If your server component errors out while rendering, the error page component will show instead. This is the same as wrapping a component in an Error Boundry.'
+  )
 
   return (
     <main className={styles.main}>
