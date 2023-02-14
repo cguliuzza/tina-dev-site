@@ -1,16 +1,32 @@
 'use client'
-
-import { useRouter } from 'next/navigation'
+import { useState } from 'react'
 
 export default function Contact() {
-    const router = useRouter()
+  const [email, setEmail] = useState('')
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({ email }),
+    })
+    console.log('submitted')
+  }
 
-    return (
-        <div>
-            <h1>Reach out to Tina</h1>
-            <button type="button" onClick={() => router.push('/blog')}>
-                Blog
-            </button>
-        </div>
-    )
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  )
 }
