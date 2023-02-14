@@ -1,15 +1,16 @@
-'use client'
 import HeaderLink from './HeaderLink'
+import { delay } from '../lib/delay'
 
-const Header = () => {
-    return (
-        <header>
-            This is a header
-            <div>
-                <HeaderLink />
-            </div>
-        </header>
-    )
+const Header = async () => {
+  await delay(5000)
+  return (
+    <header>
+      This is a header
+      <div>
+        <HeaderLink />
+      </div>
+    </header>
+  )
 }
 
 export default Header
