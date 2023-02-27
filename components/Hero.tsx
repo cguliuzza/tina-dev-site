@@ -5,42 +5,43 @@ export default function Hero() {
         <div className="relative px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-36">
             <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                React Product Engineer
-              </h1>
-              <h2 className="mt-3 mb-3 text-3xl font-light">
+              <h2 className="text-3xl font-light tracking-normal">
                 Christina Guliuzza
               </h2>
-
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Product and user-focused React Engineer with personable and
-                compassionate communication skills.
+              <h1 className="p-3 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                React Product Engineer
+              </h1>
+              <p className="mt-6 font-light text-lg leading-8 text-gray-600">
+                <span className="font-semibold">Product</span> and{' '}
+                <span className="font-semibold">user-focused</span> React
+                Engineer with <span className="font-semibold">personable</span>{' '}
+                and{' '}
+                <span className="font-semibold">
+                  compassionate communication
+                </span>{' '}
+                skills.
               </p>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 font-light text-lg leading-8 text-gray-600">
                 I have developed and maintained end-to-end products using
                 Javascript and React. I am particularly interested in
-                programming customer-centric SaaS applications, with a focus on
-                data-driven decision making and rapid growth.
+                programming{' '}
+                <span className="font-semibold">
+                  customer-centric SaaS applications,
+                </span>{' '}
+                with a focus on{' '}
+                <span className="font-semibold">data-driven</span> decision
+                making and rapid growth.
               </p>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                My understanding of user experience, and data analysis enables
-                me to make informed product decisions. My colleagues have
-                described me as detail-oriented, patient, and reliable.
+              <p className="mt-6 font-light text-lg leading-8 text-gray-600">
+                My understanding of{' '}
+                <span className="font-semibold">user experience</span> and{' '}
+                <span className="font-semibold">data analysis</span> enables me
+                to make informed product decisions. My colleagues have described
+                me as{' '}
+                <span className="font-semibold">
+                  detail-oriented, patient, and reliable.
+                </span>
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="#"
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  Get started
-                </a>
-                <a
-                  href="#"
-                  className="text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
-              </div>
             </div>
           </div>
           <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
