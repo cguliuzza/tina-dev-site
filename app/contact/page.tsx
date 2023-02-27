@@ -1,32 +1,15 @@
-'use client'
-import { useState } from 'react'
+import type { Metadata } from 'next'
+import ContactForm from '../../components/ContactForm'
 
-export default function Contact() {
-  const [email, setEmail] = useState('')
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    await fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: JSON.stringify({ email }),
-    })
-    console.log('submitted')
-  }
+export const metadata: Metadata = {
+  title: 'Contact',
+  description: 'Contact page to get in touch with Christina Guliuzza',
+}
 
+export default function ContactPage() {
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          required
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <button type="submit">Submit</button>
-      </form>
+      <ContactForm />
     </div>
   )
 }
