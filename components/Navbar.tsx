@@ -98,10 +98,10 @@ export default function Navbar() {
               />
             </a>
             <a
-              href="#"
+              href="/contact"
               className="ml-auto rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Sign up
+              Contact Me
             </a>
             <button
               type="button"
@@ -124,14 +124,6 @@ export default function Navbar() {
                     {item.name}
                   </a>
                 ))}
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
               </div>
             </div>
           </div>
