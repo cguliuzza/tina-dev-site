@@ -1,8 +1,4 @@
-import {
-  BuildingOffice2Icon,
-  EnvelopeIcon,
-  PhoneIcon,
-} from '@heroicons/react/24/outline'
+import { MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
 
 export default function ContactForm() {
   return (
@@ -43,13 +39,15 @@ export default function ContactForm() {
               Let’s Start a Conversation
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              How can I help you? What questions do you have for me?
+              How can I help you?
+              <br />
+              What questions do you have for me?
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
-                  <BuildingOffice2Icon
+                  <MapPinIcon
                     className="h-7 w-6 text-gray-400"
                     aria-hidden="true"
                   />
@@ -58,23 +56,6 @@ export default function ContactForm() {
                   Remote
                   <br />
                   Orange County, CA
-                </dd>
-              </div>
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Telephone</span>
-                  <PhoneIcon
-                    className="h-7 w-6 text-gray-400"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  <a
-                    className="hover:text-gray-900"
-                    href="tel:+1 (555) 234-5678"
-                  >
-                    +1 (555) 234-5678
-                  </a>
                 </dd>
               </div>
               <div className="flex gap-x-4">
@@ -90,7 +71,7 @@ export default function ContactForm() {
                     className="hover:text-gray-900"
                     href="mailto:hello@example.com"
                   >
-                    hello@example.com
+                    christina.guliuzza@gmail.com
                   </a>
                 </dd>
               </div>
