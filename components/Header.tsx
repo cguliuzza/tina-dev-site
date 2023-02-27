@@ -1,11 +1,10 @@
-import HeaderLink from './HeaderLink'
+import Navbar from './Navbar'
 
 const Header = () => {
   return (
     <header>
-      This is a header
       <div>
-        <HeaderLink />
+        <Navbar />
       </div>
     </header>
   )
