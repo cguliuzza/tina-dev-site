@@ -55,7 +55,7 @@ export default function Navbar() {
               href={item.href}
               rel={item.rel}
               target={item.target}
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-sm font-normal leading-6 text-gray-900"
             >
               {item.name}
             </a>

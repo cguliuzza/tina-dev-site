@@ -3,15 +3,15 @@ export default function Hero() {
     <div className="px-6 pt-6 lg:px-8">
       <main>
         <div className="relative px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-36">
-            <div className="text-center">
+          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-24">
+            <div className="text-left">
               <h2 className="text-3xl font-light tracking-normal">
                 Christina Guliuzza
               </h2>
-              <h1 className="p-3 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                 React Product Engineer
               </h1>
-              <p className="mt-6 font-light text-lg leading-8 text-gray-600">
+              <p className="mt-6 font-light text-base leading-8 text-gray-600">
                 <span className="font-semibold">Product</span> and{' '}
                 <span className="font-semibold">user-focused</span> React
                 Engineer with <span className="font-semibold">personable</span>{' '}
@@ -21,7 +21,7 @@ export default function Hero() {
                 </span>{' '}
                 skills.
               </p>
-              <p className="mt-6 font-light text-lg leading-8 text-gray-600">
+              <p className="mt-6 font-light text-base leading-8 text-gray-600">
                 I have developed and maintained end-to-end products using
                 Javascript and React. I am particularly interested in
                 programming{' '}
@@ -32,7 +32,7 @@ export default function Hero() {
                 <span className="font-semibold">data-driven</span> decision
                 making and rapid growth.
               </p>
-              <p className="mt-6 font-light text-lg leading-8 text-gray-600">
+              <p className="mt-6 font-light text-base leading-8 text-gray-600">
                 My understanding of{' '}
                 <span className="font-semibold">user experience</span> and{' '}
                 <span className="font-semibold">data analysis</span> enables me
