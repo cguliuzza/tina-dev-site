@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Testimonials from '../../components/Testimonials'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -31,6 +32,7 @@ export default function AboutPage() {
           no one has to ask for permission. You can just build.
         </p>
         <p className="mb-8">Outside of Really Good Emails, I ...</p>
+        <Testimonials />
       </div>
     </section>
   )
