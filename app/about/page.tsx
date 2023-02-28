@@ -8,32 +8,65 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <section>
-      <h1 className="font-bold text-3xl font-serif">About Me</h1>
-      <p className="my-5 text-neutral-800">
-        Hey, I'm Christina. Most folks know me as <b>Tina</b>.
-      </p>
-      <div className="prose prose-neutral text-neutral-800">
-        <p>
-          I'm currently the <b>React Product Engineer at Really Good Emails</b>,
-          where I lead our SaaS product development.
-        </p>
-        <hr />
-        <p>
-          I'm passionate about many creative pursuits, including photography,
-          hand lettering, note taking, and of course, coding. This combination
-          of interests is what ultimately led me to my current role in building
-          product websites.
-        </p>
-        <p>
-          I <b>love</b> building for the web. From something as simple as a
-          single HTML file – all the way to large Next.js applications. The web
-          is incredible. Anyone can become a developer, writer, or creator – and
-          no one has to ask for permission. You can just build.
-        </p>
-        <p className="mb-8">Outside of Really Good Emails, I ...</p>
+    <div className="px-6 pt-6 lg:px-8">
+      <section>
+        <div className="relative px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-24">
+            <div className="text-left">
+              <h2 className="text-3xl font-light tracking-normal">
+                Christina Guliuzza
+              </h2>
+              <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                About Me
+              </h1>
+              <p className="mt-6 font-light text-base leading-8 text-gray-600">
+                Hey, I'm Christina. Most folks know me as{' '}
+                <span className="font-semibold">Tina</span>
+              </p>
+              <p className="mt-6 font-light text-base leading-8 text-gray-600">
+                I have developed and maintained end-to-end products using
+                Javascript and React. I am particularly interested in
+                programming{' '}
+                <span className="font-semibold">
+                  customer-centric SaaS applications,
+                </span>{' '}
+                with a focus on{' '}
+                <span className="font-semibold">data-driven</span> decision
+                making and rapid growth.
+              </p>
+              <p className="mt-6 font-light text-base leading-8 text-gray-600">
+                My understanding of{' '}
+                <span className="font-semibold">user experience</span> and{' '}
+                <span className="font-semibold">data analysis</span> enables me
+                to make informed product decisions. My colleagues have described
+                me as{' '}
+                <span className="font-semibold">
+                  detail-oriented, patient, and reliable.
+                </span>
+              </p>
+              <p className="mt-6 font-light text-base leading-8 text-gray-600">
+                I'm currently a React Product Engineer at Really Good Emails,
+                where I lead our SaaS product development.
+              </p>
+            </div>
+          </div>
+        </div>
         <Testimonials />
-      </div>
-    </section>
+      </section>
+    </div>
   )
+}
+
+{
+  /* <h1 className="font-bold text-3xl font-serif">About Me</h1> */
+}
+{
+  /* <p className="my-5 text-neutral-800">
+    Hey, I'm Christina. Most folks know me as <b>Tina</b>.
+  </p>
+  <div className="prose prose-neutral text-neutral-800">
+    <p>
+      I'm currently the <b>React Product Engineer at Really Good Emails</b>,
+      where I lead our SaaS product development.
+    </p> */
 }
