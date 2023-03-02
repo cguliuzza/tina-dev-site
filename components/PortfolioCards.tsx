@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const callouts = [
   {
     name: 'Desk and Office',

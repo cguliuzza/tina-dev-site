@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const features = [
   { name: 'Origin', description: 'Designed by Good Goods, Inc.' },
   {
