@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Portfolio', href: '/portfolio' },
@@ -41,7 +42,7 @@ export default function Navbar() {
             <span className="sr-only">
               Christina Guliuzza | React Product Engineer
             </span>
-            <img
+            <Image
               className="h-8 w-auto"
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
               alt=""
@@ -91,7 +92,7 @@ export default function Navbar() {
           <div className="flex items-center gap-x-6">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
+              <Image
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 alt=""
