@@ -95,7 +95,7 @@ export default function Testimonials() {
                 <p>{`“${featuredTestimonial.body}”`}</p>
               </blockquote>
               <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 py-4 px-6">
-                <img
+                <Image
                   className="h-10 w-10 flex-none rounded-full bg-gray-50"
                   src={`/images/${featuredTestimonial.author.image}`}
                   alt="Matthew Smith"
@@ -109,7 +109,7 @@ export default function Testimonials() {
                   </div>
                   <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
                 </div>
-                <img
+                <Image
                   className="h-10 w-auto flex-none"
                   src={rgelogo}
                   alt="Really Good Emails Logo"
@@ -142,7 +142,7 @@ export default function Testimonials() {
                           <p>{`“${testimonial.body}”`}</p>
                         </blockquote>
                         <figcaption className="mt-6 flex items-center gap-x-4">
-                          <img
+                          <Image
                             className="h-10 w-10 rounded-full bg-gray-50"
                             src={`/images/${testimonial.author.image}`}
                             alt=""
