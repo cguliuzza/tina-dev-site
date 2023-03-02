@@ -2,8 +2,11 @@
 
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import Image from 'next/image'
+import {
+  Bars3Icon,
+  XMarkIcon,
+  HomeModernIcon,
+} from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Portfolio', href: '/portfolio' },
@@ -37,16 +40,12 @@ export default function Navbar() {
         className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
+        <div className="flex lg:flex-1 hover:text-indigo-600">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">
               Christina Guliuzza | React Product Engineer
             </span>
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
-            />
+            <HomeModernIcon className="h-8 w-auto" />
           </a>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
@@ -90,13 +89,11 @@ export default function Navbar() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center gap-x-6">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+            <a href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">
+                Christina Guliuzza | React Product Engineer
+              </span>
+              <HomeModernIcon className="h-8 w-auto" />
             </a>
             <a
               href="/contact"
