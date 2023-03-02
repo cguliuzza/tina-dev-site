@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div>
+    <>
       <ContactForm />
-    </div>
+    </>
   )
 }
