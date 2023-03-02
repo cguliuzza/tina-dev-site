@@ -7,7 +7,7 @@ export default function Hero() {
       <main>
         <div className="relative px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-24 flex flex-col gap-10 sm:flex-row">
-            <img
+            <Image
               className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover"
               src={aboutme}
               alt="Christina Guliuzza portrait"
