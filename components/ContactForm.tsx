@@ -39,8 +39,6 @@ export default function ContactForm() {
               Let’s Start a Conversation
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              How can I help you?
-              <br />
               What questions do you have for me?
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
