@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <div className="px-6 pt-6 lg:px-8">
-      <section>
+      <section id="about">
         <div className="relative px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-24">
             <div className="text-left">

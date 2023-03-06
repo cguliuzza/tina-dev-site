@@ -10,7 +10,7 @@ import {
 
 const navigation = [
   { name: 'Portfolio', href: '/portfolio' },
-  { name: 'About', href: '/about' },
+  { name: 'About', href: '/#about' },
   {
     name: 'GitHub',
     href: 'https://github.com/cguliuzza',
