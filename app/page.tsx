@@ -2,6 +2,7 @@ import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import PortfolioCards from '../components/PortfolioCards'
 import About from '../components/About'
+import Contact from '../components/Contact'
 
 export default function Page() {
   return (
@@ -9,6 +10,7 @@ export default function Page() {
       <Hero />
       <PortfolioCards />
       <About />
+      <Contact />
       <Footer />
     </div>
   )
