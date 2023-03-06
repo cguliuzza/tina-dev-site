@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import ContactForm from '../../components/ContactForm'
+import ContactForm from './ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <>
+    <section id="contact">
       <ContactForm />
-    </>
+    </section>
   )
 }
