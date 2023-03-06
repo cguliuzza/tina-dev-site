@@ -63,7 +63,7 @@ export default function Navbar() {
         </div>
         <div className="flex flex-1 items-center justify-end gap-x-6">
           <a
-            href="/contact"
+            href="/#contact"
             className="rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Contact Me
@@ -96,7 +96,7 @@ export default function Navbar() {
               <HomeModernIcon className="h-8 w-auto" />
             </a>
             <a
-              href="/contact"
+              href="/#contact"
               className="ml-auto rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Contact Me
