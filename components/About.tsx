@@ -1,13 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from 'next'
-import Testimonials from '../../components/Testimonials'
+import Testimonials from './Testimonials'
 
 export const metadata: Metadata = {
   title: 'About',
   description: 'React Product Engineer at Really Good Emails',
 }
 
-export default function AboutPage() {
+export default function About() {
   return (
     <div className="px-6 pt-6 lg:px-8">
       <section>
@@ -56,18 +56,4 @@ export default function AboutPage() {
       </section>
     </div>
   )
-}
-
-{
-  /* <h1 className="font-bold text-3xl font-serif">About Me</h1> */
-}
-{
-  /* <p className="my-5 text-neutral-800">
-    Hey, I'm Christina. Most folks know me as <b>Tina</b>.
-  </p>
-  <div className="prose prose-neutral text-neutral-800">
-    <p>
-      I'm currently the <b>React Product Engineer at Really Good Emails</b>,
-      where I lead our SaaS product development.
-    </p> */
 }
