@@ -22,7 +22,7 @@ export default function About() {
               </h1>
               <p className="mt-6 font-light text-base leading-8 text-gray-600">
                 Hey, I'm Christina. Most folks know me as{' '}
-                <span className="font-semibold">Tina</span>
+                <span className="font-semibold">Tina</span>.
               </p>
               <p className="mt-6 font-light text-base leading-8 text-gray-600">
                 I have developed and maintained end-to-end products using

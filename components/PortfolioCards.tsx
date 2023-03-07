@@ -1,12 +1,12 @@
 const callouts = [
   {
-    name: 'Desk and Office',
-    description: 'Work from home accessories',
+    name: 'Upward Spiral',
+    description:
+      'React Native application to provide an accessible tool for mental health support',
     imageSrc:
       'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
-    imageAlt:
-      'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    href: '#',
+    imageAlt: 'Upward Spiral mobile application interface',
+    href: 'https://youtu.be/Q21FRmldRZc',
   },
   {
     name: 'Self-Improvement',
