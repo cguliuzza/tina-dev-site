@@ -2,8 +2,13 @@ import { SVGProps } from 'react'
 
 const navigation = {
   main: [
-    { name: 'Portfolio', href: '/portfolio' },
     { name: 'About', href: '/#about' },
+    {
+      name: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/christina-guliuzza-668354133/',
+      rel: 'noopener noreferrer',
+      target: '_blank',
+    },
     { name: 'Contact', href: '/#contact' },
   ],
   social: [
