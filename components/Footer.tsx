@@ -2,9 +2,14 @@ import { SVGProps } from 'react'
 
 const navigation = {
   main: [
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'About', href: '/#about' },
+    {
+      name: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/christina-guliuzza-668354133/',
+      rel: 'noopener noreferrer',
+      target: '_blank',
+    },
+    { name: 'Contact', href: '/#contact' },
   ],
   social: [
     {
@@ -41,7 +46,7 @@ export default function Footer() {
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
-            <div key={item.name} className="pb-6">
+            <div key={item.name} className="p-6">
               <a
                 href={item.href}
                 className="text-sm leading-6 text-gray-600 hover:text-gray-900"

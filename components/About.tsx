@@ -11,6 +11,7 @@ export default function About() {
   return (
     <div className="px-6 pt-6 lg:px-8">
       <section id="about">
+        <Testimonials />
         <div className="relative px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-24">
             <div className="text-left">
@@ -22,7 +23,7 @@ export default function About() {
               </h1>
               <p className="mt-6 font-light text-base leading-8 text-gray-600">
                 Hey, I'm Christina. Most folks know me as{' '}
-                <span className="font-semibold">Tina</span>
+                <span className="font-semibold">Tina</span>.
               </p>
               <p className="mt-6 font-light text-base leading-8 text-gray-600">
                 I have developed and maintained end-to-end products using
@@ -52,7 +53,6 @@ export default function About() {
             </div>
           </div>
         </div>
-        <Testimonials />
       </section>
     </div>
   )

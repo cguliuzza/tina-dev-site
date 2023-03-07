@@ -9,7 +9,6 @@ import {
 } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Portfolio', href: '/portfolio' },
   { name: 'About', href: '/#about' },
   {
     name: 'GitHub',

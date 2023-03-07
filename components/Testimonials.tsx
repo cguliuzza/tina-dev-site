@@ -1,16 +1,7 @@
 import Image from 'next/image'
-import rgelogo from '../public/images/rgelogo.jpeg'
 
 /* eslint-disable react/no-unescaped-entities */
-const featuredTestimonial = {
-  body: "Skip the words below and go directly to hiring Tina. She's one of the most intelligent, thoughtful, and curious employees I've worked with. Her dedication to Really Good Emails was remarkable. Even as a new engineer Tina was able to handle work adeptly and with great insight and care for User Experience. She went from Jr developer to a solid player in very short time. I would hire her again and again for not only her React skills, but also for her attention to front end design details and her skill with people. I have no doubt that in time Tina will be at the highest levels of product dev because of her willingness to learn and grow. I can't wait to watch her journey. Please reach out if you'd like to discuss Tina directly. I'd be happy anytime to share more.",
-  author: {
-    name: 'Matthew Smith',
-    handle: 'whale',
-    image: 'matthewsmith.jpeg',
-    logo: { rgelogo },
-  },
-}
+
 const testimonials = [
   [
     [
@@ -25,6 +16,16 @@ const testimonials = [
     ],
     [
       {
+        body: "Skip the words below and go directly to hiring Tina. She's one of the most intelligent, thoughtful, and curious employees I've worked with. Her dedication to Really Good Emails was remarkable. Even as a new engineer Tina was able to handle work adeptly and with great insight and care for User Experience. She went from Jr developer to a solid player in very short time. I would hire her again and again for not only her React skills, but also for her attention to front end design details and her skill with people. I have no doubt that in time Tina will be at the highest levels of product dev because of her willingness to learn and grow. I can't wait to watch her journey. Please reach out if you'd like to discuss Tina directly. I'd be happy anytime to share more.",
+        author: {
+          name: 'Matthew Smith',
+          handle: 'whale',
+          image: 'matthewsmith.jpeg',
+        },
+      },
+    ],
+    [
+      {
         body: "Tina is one of the most flexible, personable, and technically dedicated engineers I've had the pleasure of working with. Grab her while you can, y'all!",
         author: {
           name: 'Alex Martin',
@@ -32,7 +33,6 @@ const testimonials = [
           image: 'alexmartin.jpeg',
         },
       },
-      // More testimonials...
     ],
   ],
 ]
@@ -89,33 +89,7 @@ export default function Testimonials() {
               I've Worked with Amazing People
             </p>
           </div>
-          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-            <figure className="col-span-2 hidden sm:block sm:rounded-2xl sm:bg-white sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 xl:col-start-2 xl:row-end-1">
-              <blockquote className="p-12 tracking-tight text-gray-900">
-                <p>{`“${featuredTestimonial.body}”`}</p>
-              </blockquote>
-              <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 py-4 px-6">
-                <Image
-                  className="h-10 w-10 flex-none rounded-full bg-gray-50"
-                  src={`/images/${featuredTestimonial.author.image}`}
-                  alt="Matthew Smith"
-                  width={180}
-                  height={37}
-                  priority
-                />
-                <div className="flex-auto">
-                  <div className="font-semibold">
-                    {featuredTestimonial.author.name}
-                  </div>
-                  <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
-                </div>
-                <Image
-                  className="h-10 w-auto flex-none"
-                  src={rgelogo}
-                  alt="Really Good Emails Logo"
-                />
-              </figcaption>
-            </figure>
+          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-1 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-3">
             {testimonials.map((columnGroup, columnGroupIdx) => (
               <div
                 key={columnGroupIdx}
