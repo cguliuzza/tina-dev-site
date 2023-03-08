@@ -9,7 +9,6 @@ import {
 } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'About', href: '/#about' },
   {
     name: 'GitHub',
     href: 'https://github.com/cguliuzza',
