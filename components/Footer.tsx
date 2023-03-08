@@ -8,7 +8,6 @@ const navigation = {
       rel: 'noopener noreferrer',
       target: '_blank',
     },
-    { name: 'Contact', href: '/#contact' },
   ],
   social: [
     {

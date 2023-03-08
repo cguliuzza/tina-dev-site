@@ -1,16 +1,4 @@
-'use client'
-
-import { useState } from 'react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { Switch } from '@headlessui/react'
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
 export default function ContactForm() {
-  const [agreed, setAgreed] = useState(false)
-
   return (
     <div className="isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
@@ -61,6 +49,7 @@ export default function ContactForm() {
             </label>
             <div className="mt-2.5">
               <input
+                required
                 type="text"
                 name="first-name"
                 id="first-name"
@@ -78,6 +67,7 @@ export default function ContactForm() {
             </label>
             <div className="mt-2.5">
               <input
+                required
                 type="text"
                 name="last-name"
                 id="last-name"
@@ -96,6 +86,7 @@ export default function ContactForm() {
             </label>
             <div className="mt-2.5">
               <input
+                required
                 type="email"
                 name="email"
                 id="email"
@@ -113,6 +104,7 @@ export default function ContactForm() {
             </label>
             <div className="mt-2.5">
               <textarea
+                required
                 name="message"
                 id="message"
                 rows={4}
@@ -127,7 +119,7 @@ export default function ContactForm() {
             type="submit"
             className="block w-full rounded-md bg-cyan-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
           >
-            Let's talk
+            Send Message
           </button>
         </div>
       </form>
