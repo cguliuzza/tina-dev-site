@@ -8,10 +8,10 @@ export default function Hero() {
               <h2 className="text-3xl font-light tracking-normal">
                 Christina Guliuzza
               </h2>
-              <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-6xl">
                 React Product Engineer
               </h1>
-              <p className="mt-6 font-light text-base leading-8 text-gray-600">
+              <p className="mt-6 font-light text-base leading-8 text-slate-600">
                 <span className="font-semibold">Product</span> and{' '}
                 <span className="font-semibold">user-focused</span> React
                 Engineer with <span className="font-semibold">personable</span>{' '}
