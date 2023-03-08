@@ -1,7 +1,7 @@
 import Hero from '../components/Hero'
-import About from '../components/About'
-import Contact from '../components/Contact'
 import Testimonials from '../components/Testimonials'
+import About from '../components/About'
+import ContactForm from '../components/ContactForm'
 
 export default function Page() {
   return (
@@ -9,7 +9,7 @@ export default function Page() {
       <Hero />
       <Testimonials />
       <About />
-      <Contact />
+      <ContactForm />
     </div>
   )
 }
