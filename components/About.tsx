@@ -5,14 +5,14 @@ import aboutme from '../public/images/aboutme.jpeg'
 export default function About() {
   return (
     <section>
-      <div className="relative px-12 pt-6 lg:px-8">
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-24 flex flex-col gap-10 sm:flex-row">
+      <div className="relative px-12 py-32 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 flex flex-col gap-10 lg:flex-row">
           <Image
-            className="aspect-[4/5] mb-auto w-52 flex-none rounded-2xl object-cover"
+            className="aspect-[4/5] mb-auto flex-none rounded-2xl object-cover w-1/2"
             src={aboutme}
             alt="Christina Guliuzza portrait"
           />
-          <div className="text-left">
+          <div className="text-left flex flex-col justify-center">
             <h2 className="text-3xl font-light tracking-normal">
               Christina Guliuzza
             </h2>
