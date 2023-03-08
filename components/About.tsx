@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from 'next'
-import Testimonials from './Testimonials'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -11,7 +10,6 @@ export default function About() {
   return (
     <div className="px-6 pt-6 lg:px-8">
       <section id="about">
-        <Testimonials />
         <div className="relative px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-24">
             <div className="text-left">
