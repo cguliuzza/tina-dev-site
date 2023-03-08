@@ -2,7 +2,6 @@ import { SVGProps } from 'react'
 
 const navigation = {
   main: [
-    { name: 'About', href: '/#about' },
     {
       name: 'LinkedIn',
       href: 'https://www.linkedin.com/in/christina-guliuzza-668354133/',
