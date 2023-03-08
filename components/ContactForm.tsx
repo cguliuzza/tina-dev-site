@@ -1,4 +1,29 @@
+'use client'
+import { useState } from 'react'
+
 export default function ContactForm() {
+  const [email, setEmail] = useState('')
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [message, setMessage] = useState('')
+
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
+    e.preventDefault()
+
+    await fetch(`/api/contact`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email,
+        firstName,
+        lastName,
+        message,
+      }),
+    })
+  }
+
   return (
     <section
       id="contact"
@@ -12,11 +37,7 @@ export default function ContactForm() {
           What questions do you have for me?
         </p>
       </div>
-      <form
-        action="#"
-        method="POST"
-        className="mx-auto mt-16 max-w-xl sm:mt-20"
-      >
+      <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
           <div>
             <label
@@ -28,6 +49,8 @@ export default function ContactForm() {
             <div className="mt-2.5">
               <input
                 required
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
                 type="text"
                 name="first-name"
                 id="first-name"
@@ -46,6 +69,8 @@ export default function ContactForm() {
             <div className="mt-2.5">
               <input
                 required
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
                 type="text"
                 name="last-name"
                 id="last-name"
@@ -65,6 +90,8 @@ export default function ContactForm() {
             <div className="mt-2.5">
               <input
                 required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 type="email"
                 name="email"
                 id="email"
@@ -83,11 +110,12 @@ export default function ContactForm() {
             <div className="mt-2.5">
               <textarea
                 required
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 name="message"
                 id="message"
                 rows={4}
                 className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
-                defaultValue={''}
               />
             </div>
           </div>
