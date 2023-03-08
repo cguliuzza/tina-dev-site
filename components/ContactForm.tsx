@@ -1,172 +1,136 @@
-import { MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
+'use client'
+
+import { useState } from 'react'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { Switch } from '@headlessui/react'
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
 
 export default function ContactForm() {
+  const [agreed, setAgreed] = useState(false)
+
   return (
-    <div className="relative isolate bg-white">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
-        <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:py-48 lg:px-8">
-          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-slate-100 ring-1 ring-slate-900/10 lg:w-1/2">
-              <svg
-                className="absolute inset-0 h-full w-full stroke-slate-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-                aria-hidden="true"
-              >
-                <defs>
-                  <pattern
-                    id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
-                    width={200}
-                    height={200}
-                    x="100%"
-                    y={-1}
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <path d="M130 200V.5M.5 .5H200" fill="none" />
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" strokeWidth={0} fill="white" />
-                <svg x="100%" y={-1} className="overflow-visible fill-slate-50">
-                  <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
-                </svg>
-                <rect
-                  width="100%"
-                  height="100%"
-                  strokeWidth={0}
-                  fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"
-                />
-              </svg>
+    <div className="isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
+      <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+        <svg
+          className="relative left-1/2 -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-40rem)] sm:h-[42.375rem]"
+          viewBox="0 0 1155 678"
+        >
+          <path
+            fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)"
+            fillOpacity=".3"
+            d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
+          />
+          <defs>
+            <linearGradient
+              id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533"
+              x1="1155.49"
+              x2="-78.208"
+              y1=".177"
+              y2="474.645"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#058ba2" />
+              <stop offset={1} stopColor="#06b6d4" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div className="mx-auto max-w-2xl text-center">
+        <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          Let’s Start a Conversation
+        </h2>
+        <p className="mt-2 text-lg leading-8 text-slate-600">
+          What questions do you have for me?
+        </p>
+      </div>
+      <form
+        action="#"
+        method="POST"
+        className="mx-auto mt-16 max-w-xl sm:mt-20"
+      >
+        <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
+          <div>
+            <label
+              htmlFor="first-name"
+              className="block text-sm font-semibold leading-6 text-slate-900"
+            >
+              First name
+            </label>
+            <div className="mt-2.5">
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                autoComplete="given-name"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
+              />
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900">
-              Let’s Start a Conversation
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-slate-600">
-              What questions do you have for me?
-            </p>
-            <dl className="mt-10 space-y-4 text-base leading-7 text-slate-600">
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Telephone</span>
-                  <MapPinIcon
-                    className="h-7 w-6 text-slate-400"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  Remote
-                  <br />
-                  Orange County, CA
-                </dd>
-              </div>
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Telephone</span>
-                  <EnvelopeIcon
-                    className="h-7 w-6 text-slate-400"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  <a
-                    className="hover:text-slate-900"
-                    href="mailto:hello@example.com"
-                  >
-                    christina.guliuzza@gmail.com
-                  </a>
-                </dd>
-              </div>
-            </dl>
+          </div>
+          <div>
+            <label
+              htmlFor="last-name"
+              className="block text-sm font-semibold leading-6 text-slate-900"
+            >
+              Last name
+            </label>
+            <div className="mt-2.5">
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                autoComplete="family-name"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+
+          <div className="sm:col-span-2">
+            <label
+              htmlFor="email"
+              className="block text-sm font-semibold leading-6 text-slate-900"
+            >
+              Email
+            </label>
+            <div className="mt-2.5">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autoComplete="email"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label
+              htmlFor="message"
+              className="block text-sm font-semibold leading-6 text-slate-900"
+            >
+              Message
+            </label>
+            <div className="mt-2.5">
+              <textarea
+                name="message"
+                id="message"
+                rows={4}
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
+                defaultValue={''}
+              />
+            </div>
           </div>
         </div>
-        <form
-          action="#"
-          method="POST"
-          className="px-6 pb-24 pt-20 sm:pb-32 lg:py-48 lg:px-8"
-        >
-          <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
-            <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
-              <div>
-                <label
-                  htmlFor="first-name"
-                  className="block text-sm font-semibold leading-6 text-slate-900"
-                >
-                  First name
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    required={true}
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    autoComplete="given-name"
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div>
-                <label
-                  htmlFor="last-name"
-                  className="block text-sm font-semibold leading-6 text-slate-900"
-                >
-                  Last name
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    required={true}
-                    type="text"
-                    name="last-name"
-                    id="last-name"
-                    autoComplete="family-name"
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-semibold leading-6 text-slate-900"
-                >
-                  Email
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    required={true}
-                    type="email"
-                    name="email"
-                    id="email"
-                    autoComplete="email"
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-semibold leading-6 text-slate-900"
-                >
-                  Message
-                </label>
-                <div className="mt-2.5">
-                  <textarea
-                    required={true}
-                    name="message"
-                    id="message"
-                    rows={4}
-                    className="block w-full rounded-md border-0 py-2 px-3.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
-                    defaultValue={''}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="mt-8 flex justify-end">
-              <button
-                type="submit"
-                className="rounded-md bg-cyan-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
-              >
-                Send message
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
+        <div className="mt-10">
+          <button
+            type="submit"
+            className="block w-full rounded-md bg-cyan-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
+          >
+            Let's talk
+          </button>
+        </div>
+      </form>
     </div>
   )
 }
