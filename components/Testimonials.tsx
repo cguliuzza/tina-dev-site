@@ -39,7 +39,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <>
-      <div className="relative isolate bg-gray-900 pt-24 pb-32 sm:pt-32">
+      <div className="relative isolate bg-slate-900 pt-24 pb-32 sm:pt-32">
         <div className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl">
           <svg
             viewBox="0 0 1313 771"
@@ -64,14 +64,14 @@ export default function Testimonials() {
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-xl text-center">
-            <h2 className="text-lg font-semibold leading-8 tracking-tight text-gray-300">
+            <h2 className="text-lg font-semibold leading-8 tracking-tight text-slate-300">
               Testimonials
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
               I've Worked with Amazing People
             </p>
           </div>
-          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-1 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-3">
+          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-slate-900 sm:mt-20 sm:grid-cols-1 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-3">
             {testimonials.map((columnGroup, columnGroupIdx) => (
               <div
                 key={columnGroupIdx}
@@ -82,24 +82,24 @@ export default function Testimonials() {
                     {column.map((testimonial) => (
                       <figure
                         key={testimonial.author.handle}
-                        className=" flex flex-col justify-between rounded-2xl bg-gray-800 p-6 shadow-lg ring-1 ring-gray-900/5"
+                        className=" flex flex-col justify-between rounded-2xl bg-slate-800 p-6 shadow-lg ring-1 ring-slate-900/5"
                       >
-                        <blockquote className="text-gray-300">
+                        <blockquote className="text-slate-300">
                           <p>{`“${testimonial.body}”`}</p>
                         </blockquote>
                         <figcaption className="mt-6 flex items-center gap-x-4">
                           <Image
-                            className="h-10 w-10 rounded-full bg-gray-50"
+                            className="h-10 w-10 rounded-full bg-slate-50"
                             src={`/images/${testimonial.author.image}`}
                             alt=""
                             width={180}
                             height={37}
                           />
                           <div>
-                            <div className="font-semibold text-gray-300">
+                            <div className="font-semibold text-slate-300">
                               {testimonial.author.name}
                             </div>
-                            <div className="text-gray-400">{`@${testimonial.author.handle}`}</div>
+                            <div className="text-slate-400">{`@${testimonial.author.handle}`}</div>
                           </div>
                         </figcaption>
                       </figure>
