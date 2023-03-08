@@ -17,7 +17,7 @@ export default function ContactForm() {
     message: '',
   })
 
-  const handleServerResponse = (ok, msg) => {
+  const handleServerResponse = (ok: boolean, msg: string) => {
     if (ok) {
       setStatus({
         submitted: true,
@@ -25,6 +25,8 @@ export default function ContactForm() {
         info: { error: false, msg: msg },
       })
       setInputs({
+        firstname: '',
+        lastname: '',
         email: '',
         message: '',
       })
@@ -35,7 +37,10 @@ export default function ContactForm() {
     }
   }
 
-  const handleOnChange = (e) => {
+  const handleOnChange = (e: {
+    persist: () => void
+    target: { id: any; value: any }
+  }) => {
     e.persist()
     setInputs((prev) => ({
       ...prev,
