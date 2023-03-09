@@ -30,10 +30,6 @@ export default function ContactForm() {
         email: '',
         message: '',
       })
-    } else {
-      setStatus({
-        info: { error: true, msg: msg },
-      })
     }
   }
 
@@ -68,7 +64,7 @@ export default function ContactForm() {
         )
       })
       .catch((error) => {
-        handleServerResponse(false, error.response.data.error)
+        handleServerResponse(false, 'Please refresh the page and try again')
       })
   }
 
