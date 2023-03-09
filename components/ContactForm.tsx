@@ -47,7 +47,7 @@ export default function ContactForm() {
       submitting: false,
     })
   }
-  const handleOnSubmit = (e) => {
+  const handleOnSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
     setStatus((prevStatus) => ({ ...prevStatus, submitting: true }))
     axios({
