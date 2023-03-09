@@ -1,15 +1,11 @@
 'use client'
-
 import { useState } from 'react'
 import axios from 'axios'
-
 export default function ContactForm() {
   const [status, setStatus] = useState({
     submitted: false,
     submitting: false,
-    info: { error: false, msg: null },
   })
-
   const [inputs, setInputs] = useState({
     firstname: '',
     lastname: '',
@@ -17,18 +13,22 @@ export default function ContactForm() {
     message: '',
   })
 
-  const handleServerResponse = (ok: boolean, msg: string) => {
+  const handleServerResponse = (ok: boolean) => {
     if (ok) {
       setStatus({
         submitted: true,
         submitting: false,
-        info: { error: false, msg: msg },
       })
       setInputs({
         firstname: '',
         lastname: '',
         email: '',
         message: '',
+      })
+    } else {
+      setStatus({
+        submitted: false,
+        submitting: false,
       })
     }
   }
@@ -45,10 +45,8 @@ export default function ContactForm() {
     setStatus({
       submitted: false,
       submitting: false,
-      info: { error: false, msg: null },
     })
   }
-
   const handleOnSubmit = (e) => {
     e.preventDefault()
     setStatus((prevStatus) => ({ ...prevStatus, submitting: true }))
@@ -58,21 +56,14 @@ export default function ContactForm() {
       data: inputs,
     })
       .then((response) => {
-        handleServerResponse(
-          true,
-          'Thank you, your message has been submitted.'
-        )
+        handleServerResponse(true)
       })
       .catch((error) => {
-        handleServerResponse(false, 'Please refresh the page and try again')
+        handleServerResponse(false)
       })
   }
-
   return (
-    <section
-      id="contact"
-      className="isolate bg-white py-24 px-6 sm:py-32 lg:px-8"
-    >
+    <div id="contact" className="isolate bg-white py-24 px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
           Let’s Start a Conversation
@@ -126,7 +117,6 @@ export default function ContactForm() {
               />
             </div>
           </div>
-
           <div className="sm:col-span-2">
             <label
               htmlFor="email"
@@ -181,14 +171,13 @@ export default function ContactForm() {
           </button>
         </div>
       </form>
-      {status.info.error && (
-        <div className="error">Error: {status.info.msg}</div>
-      )}
-      {!status.info.error && status.info.msg && (
-        <p className="mt-6 text-center text-base leading-8 text-slate-600">
-          {status.info.msg}
-        </p>
-      )}
-    </section>
+      <div>
+        {!!status.submitted && (
+          <p className="mt-6 text-center text-base leading-8 text-slate-600">
+            Thank you, your message has been submitted.
+          </p>
+        )}
+      </div>
+    </div>
   )
 }
