@@ -63,15 +63,12 @@ export default function Testimonials() {
           </svg>
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-xl text-center">
-            <h2 className="text-lg font-semibold leading-8 tracking-tight text-slate-300">
-              Testimonials
+          <div className="mx-auto text-center">
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              These People Want Me to Work with You
             </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              I've Worked with Amazing People
-            </p>
           </div>
-          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-slate-900 sm:mt-20 sm:grid-cols-1 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-3">
+          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-base leading-6 text-slate-900 sm:mt-20 sm:grid-cols-1 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-3">
             {testimonials.map((columnGroup, columnGroupIdx) => (
               <div
                 key={columnGroupIdx}
