@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 
 const navigation = [
   {
@@ -31,7 +32,7 @@ export default function Navbar() {
   return (
     <header className="bg-white">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8 border-b border-solid border-slate-500/10"
         aria-label="Global"
       >
         <div className="hidden lg:flex lg:gap-x-12">
@@ -54,6 +55,15 @@ export default function Navbar() {
           >
             Contact Me
           </a>
+        </div>
+        <div>
+          <Image
+            className="relative w-20 h-20 pt-2 object-top object-cover overflow-hidden hover:{showHello}"
+            src={`/images/tinabgremoved.png`}
+            alt=""
+            width={180}
+            height={37}
+          />
         </div>
         <div className="flex lg:hidden">
           <button
