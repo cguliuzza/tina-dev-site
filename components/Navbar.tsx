@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 
 const navigation = [
   {
@@ -29,9 +30,9 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white">
+    <header className="bg-white border-b border-solid border-slate-500/10">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 lg:px-8"
         aria-label="Global"
       >
         <div className="hidden lg:flex lg:gap-x-12">
@@ -55,10 +56,19 @@ export default function Navbar() {
             Contact Me
           </a>
         </div>
+        <div>
+          <Image
+            className="relative w-20 h-20 pt-2 object-top object-cover overflow-hidden hover:{showHello}"
+            src={`/images/tinabgremoved.png`}
+            alt=""
+            width={180}
+            height={37}
+          />
+        </div>
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 px-6 text-slate-700"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -83,7 +93,7 @@ export default function Navbar() {
             </a>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-slate-700"
+              className="-m-2.5 rounded-md p-3 text-slate-700"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
