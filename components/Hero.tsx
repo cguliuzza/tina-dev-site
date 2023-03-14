@@ -1,55 +1,57 @@
+import { SparklesIcon } from '@heroicons/react/24/outline'
+
 export default function Hero() {
   return (
-    <div className="px-6 pt-6 lg:px-8">
-      <main>
-        <div className="relative px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-24 flex flex-col gap-10 sm:flex-row">
-            <div className="text-left">
-              <h2 className="text-3xl font-light tracking-normal">
-                Christina Guliuzza
-              </h2>
-              <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-6xl">
-                React Product Engineer
-              </h1>
-              <p className="mt-6 font-light text-base leading-8 text-slate-600">
-                <span className="font-semibold">Product</span> and{' '}
-                <span className="font-semibold">user-focused</span> React
-                Engineer with <span className="font-semibold">personable</span>{' '}
-                and{' '}
-                <span className="font-semibold">
-                  compassionate communication
-                </span>{' '}
-                skills.
-              </p>
-            </div>
-          </div>
-          <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
-            <svg
-              className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
-              viewBox="0 0 1155 678"
-            >
-              <path
-                fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)"
-                fillOpacity=".3"
-                d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
-              />
-              <defs>
-                <linearGradient
-                  id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc"
-                  x1="1155.49"
-                  x2="-78.208"
-                  y1=".177"
-                  y2="474.645"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#058ba2" />
-                  <stop offset={1} stopColor="#06b6d4" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-        </div>
-      </main>
+    <div className="flex flex-col items-center text-center max-w-4xl mx-auto py-32 sm:py-48 lg:py-24">
+      {/* <div className="lg:px-8 mx-auto max-w-2xl py-32 sm:py-48 lg:py-24 flex flex-col gap-10 sm:flex-row"> */}
+      <h2 className="text-2xl font-light tracking-normal text-slate-600">
+        Christina Guliuzza
+      </h2>
+      <h1 className="py-6 text-3xl font-bold tracking-tight text-slate-900 md:text-6xl">
+        React Product Engineer
+      </h1>
+      <p className="max-w-sm font-light text-base leading-8 text-slate-600">
+        Hey, I’m Tina, I’m a likeable product and user-focused React Engineer
+        with personable and empathetic communication skillz.
+      </p>
+      <button
+        data-tooltip-target="tooltip-bottom"
+        data-tooltip-placement="bottom"
+        type="button"
+        className="mb-2 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Tooltip bottom
+      </button>
+      <div
+        id="tooltip-bottom"
+        role="tooltip"
+        className="absolute z-10  inline-block px-3 py-2 text-sm font-medium text-red-500 bg-slate-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-slate-700"
+      >
+        Tooltip on bottom
+        <div className="tooltip-arrow" data-popper-arrow></div>
+      </div>
+
+      <SparklesIcon className="inline h-6 w-6" aria-hidden="true" />
+      <button
+        data-tooltip-target="tooltip-light"
+        data-tooltip-style="light"
+        type="button"
+        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Light tooltip
+      </button>
+      <div
+        id="tooltip-light"
+        role="tooltip"
+        className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip"
+      >
+        Tooltip content
+        <div className="tooltip-arrow" data-popper-arrow></div>
+      </div>
+
+      <p className="max-w-sm font-light text-xs leading-8 text-slate-600">
+        * skillz with a z is 11.5x more than the normal level of skills.
+      </p>
     </div>
   )
 }
