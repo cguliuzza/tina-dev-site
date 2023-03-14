@@ -83,7 +83,7 @@ export default function Navbar() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 pb-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10">
           <div className="flex items-center gap-x-6">
             <a
               href="/#contact"
@@ -92,6 +92,15 @@ export default function Navbar() {
             >
               Contact Me
             </a>
+            <div className="flex">
+              <Image
+                className="relative w-20 h-20 pt-2 object-top object-cover overflow-hidden"
+                src={`/images/tinabgremoved.png`}
+                alt=""
+                width={180}
+                height={37}
+              />
+            </div>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-slate-700"
