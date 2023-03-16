@@ -58,7 +58,7 @@ export default function Hero() {
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative mt-10 flex items-center">
                 <a
-                  href="mailto:christina.guliuzza@gmail.com"
+                  href="mailto:hello@christinaguliuzza.com"
                   className="rounded-md bg-cyan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
                 >
                   Contact Me

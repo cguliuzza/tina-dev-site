@@ -48,13 +48,13 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-        <button className="group flex flex-0  ml-auto items-center justify-end rounded-md text-white bg-cyan-600 py-2 px-3 shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600">
+        <button className="group block ml-auto items-center justify-end rounded-md text-white bg-cyan-600 py-2 px-3 shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600">
           <a
-            href="mailto:christina.guliuzza@gmail.com"
+            href="mailto:hello@christinaguliuzza.com"
             className="text-sm font-medium"
           >
             Contact Me{' '}
-            <span className="wave">
+            <span className="hidden sm:inline-block wave">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -100,7 +100,7 @@ export default function Navbar() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 pb-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10">
           <div className="flex items-center gap-x-6">
             <a
-              href="/#contact"
+              href="mailto:hello@christinaguliuzza.com"
               onClick={() => setMobileMenuOpen(false)}
               className="ml-auto rounded-md bg-cyan-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
             >

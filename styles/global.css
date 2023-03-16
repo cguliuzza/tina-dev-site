@@ -17,7 +17,10 @@ html {
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
-  display: inline-block;
+  display: hidden;
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 
 @keyframes wave-animation {
