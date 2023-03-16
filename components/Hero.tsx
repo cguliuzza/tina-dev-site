@@ -1,4 +1,4 @@
-export default function Example() {
+export default function Hero() {
   return (
     <div className="bg-white">
       <div className="relative isolate px-6 pt-14 lg:px-8">
@@ -55,13 +55,15 @@ export default function Example() {
             <p className="mt-6 text-xs leading-8 text-slate-400">
               * skillz with a z is 11.5x more than the normal level of skills.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="mailto:christina.guliuzza@gmail.com"
-                className="rounded-md bg-cyan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
-              >
-                Contact Me
-              </a>
+            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+              <div className="relative mt-10 flex items-center">
+                <a
+                  href="mailto:christina.guliuzza@gmail.com"
+                  className="rounded-md bg-cyan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
+                >
+                  Contact Me
+                </a>
+              </div>
             </div>
           </div>
         </div>
