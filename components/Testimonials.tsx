@@ -15,7 +15,7 @@ const testimonials = [
     ],
     [
       {
-        body: "Skip the words below and go directly to hiring Tina. She's one of the most intelligent, thoughtful, and curious employees I've worked with. Her dedication to Really Good Emails was remarkable. Even as a new engineer Tina was able to handle work adeptly and with great insight and care for User Experience. She went from Jr developer to a solid player in very short time. I would hire her again and again for not only her React skills, but also for her attention to front end design details and her skill with people. I have no doubt that in time Tina will be at the highest levels of product dev because of her willingness to learn and grow. I can't wait to watch her journey. Please reach out if you'd like to discuss Tina directly. I'd be happy anytime to share more.",
+        body: "Skip the words below and go directly to hiring Tina. She's one of the most intelligent, thoughtful, and curious employees I've worked with. [...] I would hire her again and again for not only her React skills, but also for her attention to front end design details and her skill with people. I have no doubt that in time Tina will be at the highest levels of product dev because of her willingness to learn and grow.",
         author: {
           name: 'Matthew Smith',
           handle: 'whale',
