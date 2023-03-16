@@ -13,12 +13,12 @@ export default function About() {
             alt="Christina Guliuzza portrait"
           />
           <div className="text-left flex flex-col justify-center">
-            <h2 className="text-3xl font-light tracking-normal">
+            <span className="text-3xl font-light tracking-normal">
               Christina Guliuzza
-            </h2>
-            <h1 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-6xl">
+            </span>
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-6xl">
               About Me
-            </h1>
+            </h2>
             <p className="mt-6 font-light text-base leading-8 text-slate-600">
               Hey, I'm Christina. Most folks know me as{' '}
               <span className="font-semibold">Tina</span>.
