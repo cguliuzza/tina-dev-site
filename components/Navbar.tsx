@@ -35,16 +35,27 @@ export default function Navbar() {
         className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 px-6 lg:px-8"
         aria-label="Global"
       >
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="menu hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
               rel={item.rel}
               target={item.target}
-              className="text-sm font-normal leading-6 text-slate-500 hover:text-slate-900"
+              className="menu-link text-sm font-normal leading-6 text-slate-500 hover:text-slate-900 hover:color-cyan-500"
             >
               {item.name}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="-13 0 185 50"
+                styles="enable-background: new 0 0 10 10"
+                xmlSpace="preserve"
+              >
+                <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4" />
+              </svg>
             </a>
           ))}
         </div>
