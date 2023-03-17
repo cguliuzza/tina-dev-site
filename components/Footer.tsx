@@ -1,5 +1,3 @@
-import { SVGProps } from 'react'
-
 const currentYear = new Date().getFullYear()
 
 const navigation = [
@@ -27,7 +25,15 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8">
-        <nav className="-mb-6 flex justify-center" aria-label="Footer">
+        <nav className="flex items-center justify-center" aria-label="Footer">
+          <div className="p-6">
+            <a
+              href="mailto:hello@christinaguliuzza.com"
+              className="text-center text-sm leading-6 text-slate-600 hover:text-slate-900"
+            >
+              hello@christinaguliuzza.com
+            </a>
+          </div>
           {navigation.map((item) => (
             <div key={item.name} className="p-6">
               <a
@@ -39,8 +45,8 @@ export default function Footer() {
             </div>
           ))}
         </nav>
-        <p className="mt-10 text-center text-xs leading-5 text-slate-500">
-          &copy;<span> {currentYear} </span>Christina Guliuzza, Inc. All rights
+        <p className="mt-10 text-center text-xs leading-5 text-slate-400">
+          &copy;<span>{currentYear}</span> Christina Guliuzza. All rights
           reserved.
         </p>
       </div>
