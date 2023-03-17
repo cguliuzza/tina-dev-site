@@ -29,7 +29,7 @@ export default function Footer() {
           <div className="p-6">
             <a
               href="mailto:hello@christinaguliuzza.com"
-              className="text-center text-sm leading-6 text-slate-600 hover:text-slate-900"
+              className="text-center text-sm leading-6 text-slate-500 hover:text-slate-900"
             >
               hello@christinaguliuzza.com
             </a>
@@ -38,7 +38,7 @@ export default function Footer() {
             <div key={item.name} className="p-6">
               <a
                 href={item.href}
-                className="text-sm leading-6 text-slate-600 hover:text-slate-900"
+                className="text-sm leading-6 text-slate-500 hover:text-slate-900"
               >
                 {item.name}
               </a>
