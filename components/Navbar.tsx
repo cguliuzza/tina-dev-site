@@ -42,7 +42,7 @@ export default function Navbar() {
               href={item.href}
               rel={item.rel}
               target={item.target}
-              className="text-sm font-normal leading-6 text-slate-900"
+              className="text-sm font-normal leading-6 text-slate-500 hover:text-slate-900"
             >
               {item.name}
             </a>
@@ -131,7 +131,7 @@ export default function Navbar() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-900 hover:bg-slate-50"
+                    className="-mx-3 block text-center rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-500 hover:text-slate-900 hover:bg-slate-50"
                   >
                     {item.name}
                   </a>
