@@ -25,9 +25,11 @@ control + C to close the server on MAC
 ## Create and Commit a Branch
 
 ```bash
+git branch new-branch-name
+git checkout new-branch-name
 git add .
 git commit -m "commit message"
-git push
+git push --set-upstream origin new-branch-name
 ```
 
 ### How Do APIs Work in Next.js 13?
