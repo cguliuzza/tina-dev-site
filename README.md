@@ -22,6 +22,13 @@ control + C to close the server on MAC
 
 2. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Create and Commit a Branch
+
+```bash
+git add .
+git commit -m "commit message"
+git push
+```
 
 ### How Do APIs Work in Next.js 13?
 
