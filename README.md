@@ -15,9 +15,9 @@ Checkout the [Next.js deployment docs](https://nextjs.org/docs/deployment).
 1. First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
+yarn install
+yarn next dev
+control + C to close the server on MAC
 ```
 
 2. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
