@@ -34,7 +34,7 @@ export default function Hero() {
               <a
                 href="https://reallygoodemails.com/"
                 target="_blank"
-                className="font-semibold text-cyan-600"
+                className="font-semibold text-teal-500"
               >
                 <span className="absolute inset-0" aria-hidden="true" />
                 Really Good Emails <span aria-hidden="true">&rarr;</span>
@@ -59,7 +59,7 @@ export default function Hero() {
               <div className="relative mt-10 flex items-center">
                 <a
                   href="mailto:hello@christinaguliuzza.com"
-                  className="group block ml-auto items-center justify-end rounded-full text-white bg-sky-900 py-2 px-6 shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-opacity-90"
+                  className="group block ml-auto items-center justify-end rounded-full text-white bg-teal-900 py-2 px-6 shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-opacity-90"
                 >
                   hello@christinaguliuzza.com
                 </a>

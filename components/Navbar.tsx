@@ -58,7 +58,7 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-        <button className="group block ml-auto items-center justify-end rounded-full text-white bg-sky-900 py-2 px-6 shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-opacity-90">
+        <button className="group block ml-auto items-center justify-end rounded-full text-white text-opacity-90 bg-teal-900 py-2 px-6 shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-opacity-90">
           <a
             href="mailto:hello@christinaguliuzza.com"
             className="text-sm font-medium"
@@ -109,7 +109,7 @@ export default function Navbar() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 pb-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10">
           <div className="flex items-center gap-x-6">
-            <button className="group block ml-auto items-center justify-end rounded-full text-white bg-sky-900 py-2 px-6 shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-opacity-90">
+            <button className="group block ml-auto items-center justify-end rounded-full text-white text-opacity-90 bg-teal-900 py-2 px-6 shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-opacity-90">
               <a
                 href="mailto:hello@christinaguliuzza.com"
                 className="text-sm font-medium"
