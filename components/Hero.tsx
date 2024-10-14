@@ -42,18 +42,14 @@ export default function Hero() {
             </div>
           </div>
           <div className="text-center">
-            <span className="text-3xl font-light tracking-normal">
-              Christina Guliuzza
+            <span className="text-lg font-light tracking-normal text-slate-600">
+              AVAILABLE FOR FREELANCE WORK
             </span>
-            <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-6xl">
-              React Product Engineer
+            <h1 className="text-5xl pt-4 font-bold tracking-tight text-slate-900 sm:text-6xl">
+              Webflow & React Frontend Developer
             </h1>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Hey, I’m Tina, I’m a likeable product and user-focused React
-              Engineer with personable and empathetic communication skillz*
-            </p>
-            <p className="mt-6 text-xs leading-8 text-slate-400">
-              * skillz with a z is 11.5x more than the normal level of skills.
+            Creative and nerdy, people-person who loves UI/UX. Let&apos;s build a responsive website together.
             </p>
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative mt-10 flex items-center">
