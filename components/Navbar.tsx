@@ -35,14 +35,14 @@ export default function Navbar() {
         aria-label="Global"
       >
         <div className="menu hidden lg:flex lg:gap-x-12">
-          <span className="text-slate-500 font-bold">Christina Guliuzza</span>
+          <span className="text-slate-500 text-base font-bold">Christina Guliuzza</span>
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
               rel={item.rel}
               target={item.target}
-              className="menu-link text-sm font-normal leading-6 text-slate-500 hover:text-slate-900 hover:color-cyan-500"
+              className="menu-link text-sm font-normal leading-6 text-slate-500 hover:text-slate-900 hover:color-teal-500"
             >
               {item.name}
               <svg
@@ -58,7 +58,7 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-        <button className="group block ml-auto items-center justify-end rounded-full text-white text-opacity-90 text-sm font-normal leading-6 bg-teal-900 py-2 px-6 shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-opacity-90">
+        <button className="group block ml-auto items-center justify-end rounded-full text-white text-opacity-90 text-base font-normal leading-6 bg-teal-900 py-2 px-6 shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-opacity-90">
           <a
             href="mailto:hello@christinaguliuzza.com"
           >

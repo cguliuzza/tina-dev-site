@@ -29,7 +29,7 @@ export default function Hero() {
         </div>
         <div className="mx-auto max-w-2xl py-20">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full py-1 px-3 text-sm font-normal leading-6 text-slate-500 ring-1 ring-slate-900/10 hover:ring-slate-900/20">
+            <div className="relative rounded-full py-1 px-3 font-light text-base leading-6 text-slate-500 ring-1 ring-slate-900/10 hover:ring-slate-900/30 hover:text-slate-700">
               Check out my most recent work for{' '}
               <a
                 href="https://reallygoodemails.com/"
@@ -42,21 +42,21 @@ export default function Hero() {
             </div>
           </div>
           <div className="text-center">
-            <span className="text-md font-normal leading-6 text-slate-500">
+            <span className="font-light text-base leading-6 text-slate-600">
               ACCEPTING FREELANCE WORK
             </span>
             <h1 className="text-5xl pt-4 font-bold tracking-tight text-slate-900 sm:text-6xl">
               Webflow & React Frontend Developer
             </h1>
-            <p className="mt-6 text-sm font-normal leading-6 text-slate-500">
+            <p className="mt-6 font-light text-base leading-6 text-slate-600">
               Creative and nerdy, people-person who loves UI/UX. Let&apos;s
-              build a responsive website together.
+              build out your website together.
             </p>
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative mt-10 flex items-center">
                 <a
                   href="mailto:hello@christinaguliuzza.com"
-                  className="group block ml-auto items-center justify-end rounded-full text-white text-opacity-90 text-sm font-normal leading-6 bg-teal-900 py-2 px-6 shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-opacity-90"
+                  className="group block ml-auto items-center justify-end rounded-full text-white text-opacity-90 text-base font-normal leading-6 bg-teal-900 py-2 px-6 shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-opacity-90"
                 >
                   hello@christinaguliuzza.com
                 </a>
