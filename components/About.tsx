@@ -24,13 +24,13 @@ export default function About() {
               <span className="font-semibold">Tina</span>.
             </p>
             <p className="mt-6 font-light text-base leading-8 text-slate-600">
-              I have developed and maintained end-to-end products using
-              Javascript and React. I am particularly interested in programming{' '}
+              I have developed and maintained web products using React and
+              Javascript. I am particularly interested in programming{' '}
               <span className="font-semibold">
-                customer-centric SaaS applications,
+                customer-centric
               </span>{' '}
-              with a focus on <span className="font-semibold">data-driven</span>{' '}
-              decision making and rapid growth.
+              SaaS applications, with a focus on <span className="font-semibold">data-driven</span>{' '}
+              decision making.
             </p>
             <p className="mt-6 font-light text-base leading-8 text-slate-600">
               My understanding of{' '}
@@ -43,8 +43,8 @@ export default function About() {
               </span>
             </p>
             <p className="mt-6 font-light text-base leading-8 text-slate-600">
-              I'm currently a React Product Engineer at Really Good Emails,
-              where I lead our SaaS product development.
+              I worked as a React Product Engineer at Really Good Emails, where
+              I lead their SaaS product development.
             </p>
           </div>
         </div>
