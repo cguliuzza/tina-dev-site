@@ -35,7 +35,7 @@ export default function Navbar() {
         aria-label="Global"
       >
         <div className="menu hidden lg:flex lg:gap-x-12">
-          <span className='text-slate-500 font-bold'>Christina Guliuzza</span>
+          <span className="text-slate-500 font-bold">Christina Guliuzza</span>
           {navigation.map((item) => (
             <a
               key={item.name}
@@ -58,10 +58,9 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-        <button className="group block ml-auto items-center justify-end rounded-full text-white text-opacity-90 bg-teal-900 py-2 px-6 shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-opacity-90">
+        <button className="group block ml-auto items-center justify-end rounded-full text-white text-opacity-90 text-sm font-normal leading-6 bg-teal-900 py-2 px-6 shadow-sm hover:bg-opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-opacity-90">
           <a
             href="mailto:hello@christinaguliuzza.com"
-            className="text-sm font-medium"
           >
             hello@christinaguliuzza.com{' '}
           </a>
